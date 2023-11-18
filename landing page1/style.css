@@ -1,0 +1,440 @@
+*{
+    margin: 0;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+
+body{
+    width: 95%;
+    height: 100vh;
+    background-image:linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.2)), url(https://imgcdn.flamingotravels.co.in/Images/Menu/Theme/Australia.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+html{
+    overflow-x: hidden;
+    scroll-padding-top: 6rem;
+    scroll-behavior: smooth;
+}
+/* nav
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: #333;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    /* padding:2rem 9%; */
+
+nav{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* position: fixed; */
+    /* background-color: #444; */
+    
+
+}
+.search-bar-container{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    padding: 1.5rem 2rem;
+    background: #333;
+    display: flex;
+    align-items: center;
+    border-top: 1rem solid rgba(255,255,255,.2);
+    clip-path: polygon(0 0,100% 0,100% 0,0 0);
+}
+
+
+/* header.search-bar-container #search-bar{
+    width: 100%;
+    padding: 1rem;
+    text-decoration: none;
+    color: #333;
+} */
+.logo{
+    font-size: 2.5em;
+    letter-spacing: 2px;
+    color: white;
+    margin-left: 4vh;
+}
+
+.menu a{
+    text-decoration: none;
+    font-size: 28px;
+    color: white;
+    padding: 5px 3px;
+    position: relative;
+    text-shadow: 1px 1px 1px red ;
+    margin-left: 5vh;
+    
+}
+.regis a{
+    font-size: 30px;
+    text-decoration: none;
+    background:royalblue;
+    color:black;
+    border-radius: 10px ;
+    padding: 10px 20px;
+    transition: 0.4s;
+    margin-left:1vh;
+
+}
+.regis a:hover{background-color: transparent;
+    border: 1px solid red;
+    color: white;
+}
+
+.main{
+    position: absolute;
+    color: white;
+    left: 50%;
+    top: 50%;
+    max-width: 700px;
+    transform: translate(-50%,-50%);
+    text-align:  center;
+    /* border-bottom: 2px solid red; */
+
+}
+.main a{
+     font-size: 1.5em;
+    background: indianred;
+    border-radius: 10px;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    letter-spacing: 5px;
+    transition: 0.10s ;
+    margin-top: 2.5vh;
+    position: absolute;
+    margin-left: -18vh;
+    
+}
+.menu a:before{
+    position: absolute;
+    left: 0;
+    top: 0;
+    content: ' ';
+    width: 0;
+    height: 100%;
+    border-bottom: 2px solid indianred;
+    transition: 0.4s linear;
+}
+.menu a:hover::before{
+    width: 90%;
+}
+.main h1{
+    font-size: 3.6em;
+    text-shadow: 3px 4px 4px red, -2px 4px 4px green;
+
+}
+.main span{
+    letter-spacing: 5px;
+    position:re;
+    top: 13px;
+    text-shadow: 3px 4px 4px red, -2px 4px 4px green;
+    font-size: 20px;
+    
+}
+.main a:hover{background-color: transparent;
+    border: 1px solid red;
+    color:red;
+}
+
+.icon i{
+    font-size: 1.8em;
+    color: #fff;
+    text-shadow: 1px 2px 2px red, -1px 1px 1px green;
+    cursor: pointer;
+margin-left: 1.5vh;
+justify-content:space-evenly;
+
+
+}
+.login-form-con{
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    /* background: rgba(0,0,0,.7); */
+    margin: 10vh auto;
+    width: 100%;
+    min-height: 90vh;
+    z-index: 10000;
+    top: 0;
+    left: 0;
+    margin-bottom: 10vh;
+
+}
+/* .login-form-con .active{
+top: 0;
+} */
+.login-form-con form{
+    margin: 2em;
+    padding: 1.4rem 2em;
+    border-radius: .5rem;
+    background: #fff;
+    width: 40rem;
+}
+.login-form-con form h3{
+    font-size: 3rem;
+    color: #444;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 4rem 0;
+
+}
+.aaa{
+    position: relative;
+    margin-left: 50vh;
+}
+
+.login-form-con form .box{
+    width: 100%;
+    padding: .5rem;
+    font-size: 1.7rem;
+    color: #333;
+    margin: 6rem 0;
+    border: 1re, solid rgba(0,0,0,.3);
+    text-transform: none;
+    /* position: absolute; */
+    margin-top: -15vh;
+}
+.login-form-con form .box1{
+    width: 36.5%;
+    padding: .5rem;
+    font-size: 1.7rem;
+    color: #333;
+    margin: 6rem 0;
+    border: 1re, solid rgba(0,0,0,.3);
+    text-transform: none;
+    position: absolute;
+    margin-top: -10vh;
+} 
+#remember{
+    margin: 1rem 0;
+}
+.login-form-con form label{
+    font-size: 1.5rem;
+} 
+
+.btn{
+    background: var(--orange);
+    cursor: pointer;
+    width: 78vh;
+    height: 7vh;
+   background-color: orange;
+   color: #fff;
+    font-size: 2rem;
+    border: none;
+}
+.btn:hover{
+    background: rgba(255,166,0,.2);
+    color: var(--orange);
+    border: 2px solid orange;
+}
+
+.login-form-con form p a{
+    color: orange;
+    text-decoration: none;
+    font-size: 1.1rem;
+    
+
+}
+.login-form-con form p {
+    font-size: 1.2rem;
+    
+}
+
+.login-form-con form p a:hover{
+    color: #333;
+    text-decoration: underline;
+}
+
+.login-form-con form #form-close{
+    position: absolute;
+    top: 2rem;right: 3rem;
+    font-size: 5rem;
+    color: #fff;
+    cursor: pointer;
+}
+#menu-bar{
+    color: #fff;
+    border: .1rem solid #fff;
+border-radius: .5rem;
+/* font-size: 3rem; */
+padding:.6rem 1rem;
+font-size:4vh ;
+display: none;
+
+cursor: pointer;}
+
+
+
+
+
+
+
+
+
+
+
+
+/* media quaries */
+@media(max-width:1200px){
+    html{
+        font-size: 55%;
+    }
+}
+@media(max-width:991px){
+nav{
+    padding: 2rem;
+}
+}
+
+@media(max-width:768px){
+
+        #menu-bar{
+            display: initial;
+        }
+        nav .menu{
+            position: absolute;
+            top: 100%;
+            right: 0;
+            left: 0;
+            background: #333;
+            border-top: .1rem solid rgba(255,255,255,.2);
+            padding: 1rem 2rem;
+        }
+    }
+    
+
+    .footer{
+        background: #333;
+        margin-top: 7vh;
+        width: 115%;
+        min-height: 80vh;
+    }
+    .footer1{
+        background: #333;
+        margin-top: 84vh;
+        width: 115%;
+        min-height: 80vh;
+    }
+.box-container{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1.5rem;
+        justify-content: space-around;
+    }
+
+    .box-container .box{
+        padding: 1rem 0;
+        flex: 1 1 25rem;
+        justify-content: space-around;
+    }
+
+     .box-container  .box h3{
+        font-size: 2.5rem;
+        padding: .7rem 0;
+        color: #fff;
+    }.box-container .box p{
+        font-size: 1.5rem;
+        color: #fff;
+        padding: .7rem 0;
+    }
+ .box-container .box a{
+        font-size: 1.5rem;
+        color: #fff;
+        padding: .7rem 0;
+        display: block;
+        text-decoration: none;
+    }
+
+    .box-container .box a:hover{
+        color: rgb(171, 121, 30);
+        text-decoration: underline;
+    }
+
+.credit{
+        text-align: center;
+        padding: 2rem 1rem;
+        margin-top: 2rem;
+        font-size: 2rem;
+        font-weight: normal;
+        color: #fff;
+        border-top: .1rem solid rgba(255,255,255,.2);
+    }
+
+    .credit span{
+        color: rgb(242, 168, 30);
+
+    }
+
+     .heading{
+        text-align: center;
+        color:orange;
+        margin-top: 89vh;
+        font-size: 3rem;
+    }
+    .heading span{
+        border: 2px solid orange;
+        width: 2vh;
+        padding: 2px 20px;
+        background-color: rgb(180, 123, 16);
+    }
+    
+    .gallery .boxx-container{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 24px;
+        margin-top: 2rem;
+        margin-left: 4px
+
+     }
+     .gallery .boxx-container .boxx{
+        width: 60vh;
+        height: 25rem;
+        overflow: hidden;
+        flex: 1 1 30rem;
+        position: relative;
+        border-radius: .5rem;
+        border: 1rem solid #fff;
+        box-shadow: 0 .9rem 2rem rgba(0,0,0,.1);
+        
+    } 
+    .gallery .boxx-container .boxx img{
+        object-fit: cover;
+        height: 90vh;
+        width: 100%;
+    }
+
+    .gallery .boxx-container .boxx .content{
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        width: 100%;
+        text-align: center;
+        background: rgba(0,0,0,.7);
+        padding: 2rem;
+        padding-top: 5rem;  
+      }
+
+      .gallery .boxx-container .boxx .content h3{
+        font-size: 2.5rem;
+        color: orange;
+      }
+
+      .gallery .boxx-container .boxx .content p{
+        font-size: 1.5rem;
+        color: #fff;
+      }
